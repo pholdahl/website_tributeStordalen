@@ -1,0 +1,154 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.top-section {
+    margin-top: 30px;
+    background-color: #d4b595;
+    background-image: linear-gradient(90deg, #d4b595 0%, #dcc1a7 100%);
+    text-align: center;
+    padding: 30px;
+    /* border: solid red; */
+}
+
+#title {
+    font-family: "Montserrat", sans-serif;
+    width: auto;
+    grid-area: title;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    color: whitesmoke; 
+    text-shadow: 0px 0px 3px gray;
+    font-size: 80px;
+    padding-top: 30px;
+    /* border: solid blue; */
+
+}
+
+.comment {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 30px;
+    color: whitesmoke;
+    text-shadow: 0px 0px 3px gray;
+    padding: 10px 0 0 0;
+    /* border: solid green; */
+}
+
+body {
+    background-color: oldlace;
+    width: auto;
+}
+
+#main {
+    display: grid;
+    width: auto;
+    grid-template-areas: 
+    "title"
+    "img-div"
+    "info"
+    "footer";
+}
+
+#img-div {
+    grid-area: img-div;
+    width: 100%;
+    text-align: center;
+    justify-self: center;
+    margin: 0px;
+    padding: 20px 0 10px 0;
+}
+
+#image {
+    max-width: 800px;
+    filter: sepia(0.8) drop-shadow(0px 0px 8px);
+    padding: 10px;
+    display: block;
+    margin: auto;
+
+}
+
+#img-caption {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+.info-section {
+    grid-area: info;
+    background-color: #d4b595;
+    background-image: linear-gradient(150deg, #dcc1a7 0%, #d4b595 100%);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+h3 {
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    color:#424242;
+    font-size: 28px;
+    padding: 40px 0 20px 0;
+
+}
+
+ul {
+    display: block;
+    max-width: 740px;
+}
+
+li {
+    font-family: Arial, Helvetica, sans-serif;
+    color:#424242;
+    font-size: 20px;
+    padding: 10px;
+    line-height: 1.8;
+}
+
+a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: black;
+    font-style: italic;
+    justify-self: center;
+    text-align: center;
+    width: 100%;
+    height: 30px;
+}
+
+footer {
+    grid-area: footer;
+    text-align: center;
+    background-color: oldlace;
+    height: 100px;
+}
+
+footer p {
+    padding: 70px 0 20px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: black;
+    justify-self: center;
+    text-align: center;
+    width: auto;
+}
+
+.credit {
+    background-color: gray;
+    background-image: linear-gradient(#dcc1a7 20%, gray 100%);
+}
+
+.creator {
+    text-align: center;
+    margin: 50px;
+    font-size: 14px;
+    color: black;
+    padding-bottom: 50px;
+}
